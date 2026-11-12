@@ -14,6 +14,8 @@ import Sass from '../assets/sass.png'
 import Svg from '../assets/svg.png'
 import Webpack from '../assets/webpack.png'
 import Magento from '../assets/magento.png'
+import { SiLinux, SiPhp, SiDocker, SiAmazonaws, SiGit, SiReact, SiVuedotjs } from 'react-icons/si'
+import { FaRobot } from 'react-icons/fa'
 import { useTranslation } from "react-i18next"
 
 const Skills = () => {
@@ -84,6 +86,38 @@ const Skills = () => {
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Webpack} alt="Webpack icon" />
                         <p className='my-4'>Webpack</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiLinux className='w-20 h-20 mx-auto' size={80} color="#FCC624" aria-label="Linux icon" />
+                        <p className='my-4'>Linux</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiPhp className='w-20 h-20 mx-auto' size={80} color="#777BB4" aria-label="PHP icon" />
+                        <p className='my-4'>PHP</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiDocker className='w-20 h-20 mx-auto' size={80} color="#2496ED" aria-label="Docker icon" />
+                        <p className='my-4'>Docker</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiAmazonaws className='w-20 h-20 mx-auto' size={80} color="#FF9900" aria-label="AWS icon" />
+                        <p className='my-4'>AWS</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiGit className='w-20 h-20 mx-auto' size={80} color="#F05032" aria-label="Git icon" />
+                        <p className='my-4'>Git</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiReact className='w-20 h-20 mx-auto' size={80} color="#61DAFB" aria-label="React icon" />
+                        <p className='my-4'>React JS</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <SiVuedotjs className='w-20 h-20 mx-auto' size={80} color="#4FC08D" aria-label="Vue.js icon" />
+                        <p className='my-4'>Vue.js</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <FaRobot className='w-20 h-20 mx-auto' size={80} color="#8B5CF6" aria-label="AI icon" />
+                        <p className='my-4'>AI</p>
                     </div>
                 </div>
             </div>
