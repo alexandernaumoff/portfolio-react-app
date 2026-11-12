@@ -10,6 +10,9 @@ import * as te from 'tw-elements';
 import './index.css';
 import App from './App';
 
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
