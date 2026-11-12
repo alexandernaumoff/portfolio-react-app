@@ -29,5 +29,8 @@
     "contact_msg": "Submit the form below",
     "email": "Email",
     "message": "Message",
-    "submit_button": "Get in Touch"
+    "submit_button": "Get in Touch",
+    "thanks_title": "Thank you!",
+    "thanks_message": "Your message has been sent successfully.",
+    "back_home": "Back to my Home page"
 }

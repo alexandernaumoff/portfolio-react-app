@@ -29,5 +29,8 @@
     "contact_msg": "Füllen Sie das Formular aus",
     "email": "E-Mail",
     "message": "Nachricht",
-    "submit_button": "Kontakt aufnehmen"
+    "submit_button": "Kontakt aufnehmen",
+    "thanks_title": "Vielen Dank!",
+    "thanks_message": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "back_home": "Zurück zu meiner Homepage"
 }
