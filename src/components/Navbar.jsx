@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Logo from '../assets/logo.svg'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaXingSquare, FaCodepen } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 import { useTranslation } from "react-i18next"
 import i18n from "i18next"
@@ -154,10 +153,7 @@ function Navbar() {
                         <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/magefactory" target="_blank"><FaGithub size={25} /> Github</a>
                     </li>
                     <li className='flex justify-between items-center w-[150px] h-[50px] mr-[-100px] px-[13px] hover:mr-[-5px] duration-300 bg-[#6fc2b0]'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="mailto:alex@alexander-naumov.com"><HiOutlineMail size={25} /> Email</a>
-                    </li>
-                    <li className='flex justify-between items-center w-[150px] h-[50px] mr-[-100px] px-[13px] hover:mr-[-5px] duration-300 bg-[#565f69]'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="https://demo.alexander-naumov.com/data/resume.pdf" target="_blank"><BsFillPersonLinesFill size={25} /> Resume</a>
+                        <a className='flex justify-between items-center w-full text-gray-300' href="mailto:alexander.naumov@t-online.de"><HiOutlineMail size={25} /> Email</a>
                     </li>
                 </ul>
             </div>
