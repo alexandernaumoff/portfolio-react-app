@@ -30,6 +30,9 @@ i18n
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json',
+      requestOptions: {
+        cache: 'no-cache',
+      },
     }
   });
 
