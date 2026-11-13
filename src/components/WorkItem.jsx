@@ -1,6 +1,9 @@
 import React from 'react'
 
 const WorkItem = (props) => {
+    const showDemo = Boolean(props.demoButton && props.demoUrl)
+    const showCode = Boolean(props.codeButton && props.codeUrl && props.codeButtonVisibility !== 'none')
+
     return (
 
         <div className='bg-transparent flip-card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-[250px] focus:outline-0'>
@@ -13,14 +16,20 @@ const WorkItem = (props) => {
 
                     </span>
                     <span className='text-sm pt-4 text-left text-white block'>{props.desc}</span>
-                    <div className='pt-8 text-center absolute bottom-2.5 left-0 right-0 flex justify-center flex-nowrap'>
-                        <a target="_blank" href={props.demoUrl}>
-                            <button className='secondary-btn text-center rounded px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white duration-300'>{props.demoButton}</button>
-                        </a>
-                        <a target="_blank" href={props.codeUrl}>
-                            <button style={{display: `${props.codeButtonVisibility}`}} className='secondary-btn text-center rounded px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white duration-300'>{props.codeButton}</button>
-                        </a>
-                    </div>
+                    {(showDemo || showCode) && (
+                        <div className='pt-8 text-center absolute bottom-2.5 left-0 right-0 flex justify-center flex-nowrap'>
+                            {showDemo && (
+                                <a target="_blank" rel="noreferrer" href={props.demoUrl}>
+                                    <button className='secondary-btn text-center rounded px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white duration-300'>{props.demoButton}</button>
+                                </a>
+                            )}
+                            {showCode && (
+                                <a target="_blank" rel="noreferrer" href={props.codeUrl}>
+                                    <button className='secondary-btn text-center rounded px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white duration-300'>{props.codeButton}</button>
+                                </a>
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

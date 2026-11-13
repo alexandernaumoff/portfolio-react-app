@@ -23,17 +23,17 @@ const Work = () => {
             <div className='grid min-[479px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
                 {/* grid item */}
-                <WorkItem name={t('magento_card')} desc={t('magento_desc')} bgImage={MagentoProject} codeButtonVisibility="inline-block" demoButton="Demo" demoUrl="https://magefactory.alexander-naumov.com/affirm-water-bottle.html"  codeButton="Github" codeUrl="https://github.com/magefactory/magento-2-tier-price"/>
+                <WorkItem name={t('magento_card')} desc={t('magento_desc')} bgImage={MagentoProject} codeButtonVisibility="inline-block" codeButton="Github" codeUrl="https://github.com/magefactory/magento-2-tier-price"/>
                 {/* grid item */}
-                <WorkItem name={t('svg_card')} bgImage={SvgProject} codeButtonVisibility="none" demoButton="Demo" demoUrl="https://demo.alexander-naumov.com/svg-apps/" />
+                <WorkItem name={t('svg_card')} desc={t('svg_desc')} bgImage={SvgProject} />
                 {/* grid item */}
                 <WorkItem name="HTML, CSS, JavaScript" bgImage={HtmlProject} codeButtonVisibility="inline-block" demoButton="Codepen" demoUrl="https://codepen.io/lagudal/pens/public" codeButton="Github" codeUrl="https://github.com/iskanderokilov"/>
                 {/* grid item */}
-                <WorkItem name={t("animation_card")} bgImage={AnimationsProject} codeButtonVisibility="none" demoButton={t('view')} demoUrl="https://demo.alexander-naumov.com/web-animations/" />
+                <WorkItem name={t("animation_card")} desc={t('animation_desc')} bgImage={AnimationsProject} />
                 {/* grid item */}
-                <WorkItem name={t('frameworks_card')} bgImage={FrameworksProject} codeButtonVisibility="none" demoButton={t('show')} demoUrl="https://demo.alexander-naumov.com/frameworks/" />
+                <WorkItem name={t('frameworks_card')} desc={t('frameworks_desc')} bgImage={FrameworksProject} />
                 {/* grid item */}
-                <WorkItem name={t('lp_card')} bgImage={LandingProject} codeButtonVisibility="none" demoButton={t('go_to')} demoUrl="https://demo.alexander-naumov.com/projects/thermotransfer/" />
+                <WorkItem name={t('lp_card')} desc={t('lp_desc')} bgImage={LandingProject} />
 
             </div>
         </div>
