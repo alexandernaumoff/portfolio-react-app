@@ -7,9 +7,9 @@ import  { useTranslation } from "react-i18next"
 const Home = () => { 
   const { t } = useTranslation()
   return (
-    <div name='home' className='bg-[#0a192f] w-full h-screen'>
+    <div name='home' className='bg-[#0a192f] w-full pt-32 pb-8'>
       { /*container */}
-      <div className='max-w-[1240px] mx-auto px-8 flex flex-col justify-center h-full'>
+      <div className='max-w-[1240px] mx-auto px-8 flex flex-col justify-center'>
         <p className='text-pink-600 '>{t("hi_my_name_is")}</p>
         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#ccd6f6]'>Alex Naumov</h1>
         <h2 className=' text-4lx sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#8892b0]'>{t("i_frontend_developer")}</h2>
